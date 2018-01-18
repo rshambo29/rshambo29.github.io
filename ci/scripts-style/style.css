@@ -1,0 +1,189 @@
+@media screen and (max-width: 850px){
+    .footer{
+        background-color:rgb(56, 56, 56);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "footer1" "footer2";
+        padding:10px;
+        color:white;
+    }
+
+    .columns-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "col-1"
+        "col-2"
+        "col-3";
+        text-align: left;
+    }
+
+    .parallax1{
+        background-attachment: none;
+        background-position: 25% 30%;
+    }
+
+    .parallax2{
+        background-attachment: none;
+        background-position: 45% 30%;
+    }
+
+    .col-2{
+        border-top: rgb(0, 172, 69) 1px solid;
+        border-bottom: rgb(0, 172, 69) 1px solid;
+    }
+
+    .col-1 .col-2 .col-3{
+        height: 100%;
+    }
+
+    .col-text{
+        padding-top: 20px;
+    }
+
+    .words{
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (min-width: 851px){
+    .footer{
+        background-color:white;
+        display: grid;
+        grid-template-areas: "footer1 footer2";
+        padding:10px;
+    }
+    
+    .columns-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "col-1 col-2 col-3";
+        text-align: left;
+    }
+
+    .parallax1{
+        
+        background-attachment: fixed;
+        background-position: 0% 30%;
+    }
+
+    .parallax2{
+        background-attachment: fixed;
+        background-position: 0% 25%;
+    }
+
+    .col-2{
+        border-left: rgb(0, 172, 69) 1px solid;
+        border-right: rgb(0, 172, 69) 1px solid;
+    }
+
+    .words{
+        margin-bottom: 15px;
+    }
+}
+
+
+html, body{
+    height: 100%;
+}
+
+.main-content{
+    box-shadow: -10px 7px 20px black;
+}
+
+.header{
+    width: 100%;
+}
+
+.parallax1{
+    background-image: url(https://s3.amazonaws.com/portfolio-web-project-photos/IMG_0567.jpg);
+    height: 550px;
+
+    background-repeat: none;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url(https://s3.amazonaws.com/portfolio-web-project-photos/IMG_6849.jpg);
+    height: 550px;
+
+    background-repeat: none;
+    background-size: cover;
+}
+
+.words{
+    background-color: white;
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.col-1{
+    grid-area: col-1;
+    padding: 25px;
+}
+
+.col-2{
+    grid-area: col-2;
+    padding: 25px;
+}
+
+.col-3{
+    grid-area: col-3;
+    padding: 25px;
+}
+
+.footer1{
+    grid-area: footer1;
+}
+
+.footer2{
+    grid-area: footer2;
+}
+
+.movie-display{
+    margin-top: 20px;
+    padding: auto;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 400px); 
+    background-color: white;
+    color:black;
+    justify-content: center;
+}
+
+.movie-container{
+    width: 100%;
+    background-color: white;
+    
+}
+
+.movie-block{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 172, 69) 2px solid;
+    margin: 10px;
+    box-shadow: -5px 7px 20px black;
+}
+
+.page-header-movie{
+    background-size: 1200px;
+    background-image: url(https://s3.amazonaws.com/portfolio-web-project-photos/IMG_7157.jpg);
+    text-align: center;
+    background-position: -115% 22%;
+    height:200px;
+}
+
+.page-header-content{
+    color: white;
+    padding: 10px;
+}
+
+.img-content{
+    height: 90px;
+    margin: 15px 25px 45px 10px;
+    margin-bottom: 45px;
+}
